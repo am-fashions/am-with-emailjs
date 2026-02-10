@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
@@ -11,38 +11,27 @@ import Cart from './pages/Cart';
 import AdminLogin from './pages/AdminLogin';
 
 function AppContent({ cartItems, addToCart, removeFromCart, updateQuantity }) {
-  const [isPageLoading, setIsPageLoading] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    // Show loading for all page navigations
-    setIsPageLoading(true);
-  }, [location.pathname]);
-
   return (
-    <>
-      {isPageLoading && <LoadingScreen onLoadComplete={() => setIsPageLoading(false)} />}
-      <div className="min-h-screen flex flex-col overflow-x-hidden">
-        <Navbar cartCount={cartItems.length} />
-        <div className="flex-grow overflow-x-hidden">
-          <Routes>
-            <Route path="/" element={<Home addToCart={addToCart} />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/cart" element={
-              <Cart 
-                cartItems={cartItems} 
-                removeFromCart={removeFromCart}
-                updateQuantity={updateQuantity}
-              />
-            } />
-            <Route path="/admin/login" element={<AdminLogin />} />
-          </Routes>
-        </div>
-        <Footer />
-        <Chatbot />
+    <div className="min-h-screen flex flex-col overflow-x-hidden">
+      <Navbar cartCount={cartItems.length} />
+      <div className="flex-grow overflow-x-hidden">
+        <Routes>
+          <Route path="/" element={<Home addToCart={addToCart} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={
+            <Cart 
+              cartItems={cartItems} 
+              removeFromCart={removeFromCart}
+              updateQuantity={updateQuantity}
+            />
+          } />
+          <Route path="/admin/login" element={<AdminLogin />} />
+        </Routes>
       </div>
-    </>
+      <Footer />
+      <Chatbot />
+    </div>
   );
 }
 

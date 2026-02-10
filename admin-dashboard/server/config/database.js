@@ -144,5 +144,6 @@ export default {
   beginTransaction,
   commitTransaction,
   rollbackTransaction,
-  closePool
+  closePool,
+  query: promisePool.query.bind(promisePool) // Add query method for stored procedures
 };

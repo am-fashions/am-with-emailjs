@@ -151,7 +151,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-accent">Email</h3>
-                    <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-900">contact@amfashions.com</p>
+                    <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-900">madasumiteesh@gmail.com</p>
                   </div>
                 </div>
 
@@ -164,7 +164,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-accent">Location</h3>
-                    <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-900">Fashion District, Style Avenue</p>
+                    <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-900">Anantapur, Andhra Pradesh 515001</p>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Contact = () => {
               <h2 className="text-2xl font-semibold text-accent mb-6">Follow Us</h2>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/am_fashions.official?igsh=MWU5a3F2eXprYW8ybQ=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-14 h-14 bg-accent rounded-2xl flex items-center justify-center hover:bg-gray-800 transition-all duration-500 hover:shadow-2xl hover:scale-125 hover:rotate-12 group relative overflow-hidden"
@@ -184,24 +184,13 @@ const Contact = () => {
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 bg-accent rounded-2xl flex items-center justify-center hover:bg-gray-800 transition-all duration-500 hover:shadow-2xl hover:scale-125 hover:rotate-12 group relative overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <svg className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                  </svg>
-                </a>
               </div>
             </div>
 
             <div className="bg-card rounded-3xl p-8 shadow-lg hover-glow transform transition-all duration-500">
               <h2 className="text-2xl font-semibold text-accent mb-6">Chat with Us</h2>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/919100911697"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-[#25D366] text-white px-6 py-4 rounded-2xl hover:bg-[#20BA5A] transition-all duration-500 hover:shadow-2xl hover:scale-105 group"
@@ -213,7 +202,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <p className="font-semibold text-lg">WhatsApp</p>
-                  <p className="text-sm text-white/90">Chat with us instantly</p>
+                  <p className="text-sm text-white/90">+91 91009 11697</p>
                 </div>
                 <svg className="w-6 h-6 transition-transform duration-500 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

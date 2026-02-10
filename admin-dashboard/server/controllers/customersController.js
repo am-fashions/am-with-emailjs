@@ -63,7 +63,10 @@ export const createCustomer = async (req, res) => {
       [email, password_hash, first_name, last_name, phone || null, address_line1 || null, address_line2 || null, city || null, state || null, postal_code || null, country || 'India']
     );
 
-    res.status(201).json({ success: true, data: { id: newId }, message: 'Customer created successfully' });
+    // Fetch the newly created customer
+    const newCustomer = await db.getOne('SELECT * FROM customers WHERE customer_id = ?', [newId]);
+
+    res.status(201).json({ success: true, data: newCustomer, message: 'Customer created successfully' });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }

@@ -20,6 +20,9 @@
 .env.production.local
 /admin-dashboard/server/.env
 
+# uploads
+/admin-dashboard/server/uploads/
+
 # misc
 .DS_Store
 *.log

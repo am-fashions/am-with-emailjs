@@ -89,6 +89,17 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Test email endpoint (for debugging)
+app.get('/api/test-email', async (req, res) => {
+  try {
+    const { testEmailConfig } = await import('./services/emailService.js');
+    const result = await testEmailConfig();
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // Import route modules
 import productRoutes from './routes/products.js';
 import orderRoutes from './routes/orders.js';

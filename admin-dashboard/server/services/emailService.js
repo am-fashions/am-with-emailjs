@@ -1,23 +1,27 @@
 // services/emailService.js
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Email configuration
 const EMAIL_CONFIG = {
-  // Gmail configuration (you can change this to any email provider)
+  // Gmail configuration
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER || 'your-email@gmail.com', // Change this
-    pass: process.env.EMAIL_PASSWORD || 'your-app-password' // Use App Password for Gmail
+    user: process.env.EMAIL_USER || 'madasumiteesh@gmail.com',
+    pass: process.env.EMAIL_PASSWORD || 'mnfc xdxe ojpi rtzf'
   }
 };
 
 // Admin notification email
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@yourstore.com'; // Change this
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'madasumiteesh@gmail.com';
 
 // Create transporter
 const createTransporter = () => {
   try {
-    return nodemailer.createTransporter(EMAIL_CONFIG);
+    const transporter = nodemailer.createTransport(EMAIL_CONFIG);
+    return transporter;
   } catch (error) {
     console.error('Error creating email transporter:', error);
     return null;

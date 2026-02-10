@@ -83,6 +83,29 @@ const Payment = ({ orderData, onPaymentComplete, onCancel }) => {
               </div>
               <p className="text-gray-600 text-sm">Scan QR Code with any UPI app</p>
               <p className="text-accent font-semibold mt-2">Pay to: AM Fashions</p>
+              
+              {/* UPI ID Section */}
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-gray-600 text-sm mb-2">Or use UPI ID directly:</p>
+                <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 border-2 border-purple-200">
+                  <p className="text-xs text-gray-500 mb-1">UPI ID</p>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-lg font-mono font-bold text-purple-700">6281534110-2@ybl</p>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText('6281534110-2@ybl');
+                        alert('UPI ID copied to clipboard!');
+                      }}
+                      className="p-2 hover:bg-purple-100 rounded-lg transition-all"
+                      title="Copy UPI ID"
+                    >
+                      <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Payment Instructions */}

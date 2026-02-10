@@ -209,13 +209,9 @@ const AdminLogin = () => {
 
           {/* Info */}
           <div className="mt-6 p-4 bg-blue-50 rounded-xl">
-            <p className="text-xs text-gray-600 text-center mb-2">
+            <p className="text-xs text-gray-600 text-center">
               <strong>🔐 Two-Factor Security:</strong><br />
               Login requires admin approval via email
-            </p>
-            <p className="text-xs text-gray-600 text-center">
-              <strong>Default Credentials:</strong><br />
-              Username: admin | Password: admin123
             </p>
           </div>
         </div>
